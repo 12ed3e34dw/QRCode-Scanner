@@ -41,7 +41,7 @@ const App: React.FC<Props> = ({ navigation }) => {
         </View>
     );
 };
-//
+//1
 const styles = StyleSheet.create({
     lightContainer: {
         flex: 1,
