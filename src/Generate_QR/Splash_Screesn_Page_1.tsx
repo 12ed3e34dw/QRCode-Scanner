@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
     },
     container_main: {
         flex: 1,
-        backgroundColor: "#333333", // Жёлтый фон вначале
+        backgroundColor: "#333333", // Тёмный фон после 20 секунд
         justifyContent: 'center',
         alignItems: 'center',
     },
