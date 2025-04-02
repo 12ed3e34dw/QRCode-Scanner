@@ -1,7 +1,7 @@
 import {View, StyleSheet, Text} from 'react-native';
 import React, { useEffect, useState } from 'react';
 
-function Splash_Screesn_Page_1() {
+function Splash_Screesn_Page_Loading() {
     const [isFirstStyle, setIsFirstStyle] = useState(false);
 
     useEffect(() => {
@@ -40,4 +40,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default Splash_Screesn_Page_1();
+export default Splash_Screesn_Page_Loading();
