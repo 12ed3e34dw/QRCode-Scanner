@@ -1,7 +1,7 @@
 import {View, StyleSheet, Text} from 'react-native';
 import React, { useEffect, useState } from 'react';
 
-function Splash_Screesn_Page_1() {
+function Splash_Screesn_Page_Loading() {
     const [isFirstStyle, setIsFirstStyle] = useState(false);
 
     useEffect(() => {
@@ -34,10 +34,10 @@ const styles = StyleSheet.create({
     },
     container_main: {
         flex: 1,
-        backgroundColor: "#333333", // Жёлтый фон вначале
+        backgroundColor: "#333333", // Тёмный фон после 20 секунд
         justifyContent: 'center',
         alignItems: 'center',
     },
 });
 
-export default Splash_Screesn_Page_1();
+export default Splash_Screesn_Page_Loading();

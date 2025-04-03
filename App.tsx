@@ -1,65 +1,62 @@
-import React, { useEffect, useState } from "react";
-import { View, Text, StyleSheet } from "react-native";
-import { NativeStackScreenProps } from "@react-navigation/native-stack";
-import Splash_Screesn_Page_1 from './src/Generate_QR/Splash_Screesn_Page_1.tsx';
-import Splash_Screesn_Page_2 from './src/Generate_QR/Splash_Screesn_Page_2.tsx';
+import {View, StyleSheet, Text, TouchableOpacity} from 'react-native';
+// @ts-ignore
+import React,{alert} from "react";
+
+function App() {
 
 
-
-type RootStackParamList = {
-
-    Splash1: Splash_Screesn_Page_1;
-    Splash2: Splash_Screesn_Page_2;
-};
-
-type Props = NativeStackScreenProps<RootStackParamList, "Splash1">;
-
-const App: React.FC<Props> = ({ navigation }) => {
-    const [isDarkMode, setIsDarkMode] = useState(false);
-
-    useEffect(() => {
-        // Таймер для смены фона через 3 секунды
-        const styleTimer = setTimeout(() => {
-            setIsDarkMode(true);
-        }, 3000);
-
-        // Таймер для перехода на следующий экран через 5 секунд
-        const navigationTimer = setTimeout(() => {
-            navigation.replace("Splash2");
-        }, 5000);
-
-        // Очистка таймеров при размонтировании
-        return () => {
-            clearTimeout(styleTimer);
-            clearTimeout(navigationTimer);
-        };
-    }, []);
 
     return (
-        <View style={isDarkMode ? styles.darkContainer : styles.lightContainer}>
-            <Text style={styles.text}>Ожидайте...</Text>
+        <View style={styles.container}>
+
+            <View style={styles.container_Main}>
+           <Text style={styles.text}></Text>
+
+
+                <TouchableOpacity style={styles.button} onPress={() => alert('Let’s Start!')}>
+                    <Text style={ styles.buttonText}>Generate QR Code</Text>
+                </TouchableOpacity>
+            </View>
+
         </View>
     );
-};
-//style
+}
+
 const styles = StyleSheet.create({
-    lightContainer: {
+    container: {
         flex: 1,
-        backgroundColor: "#FDB623", // Жёлтый фон в начале
-        justifyContent: "center",
-        alignItems: "center",
+        backgroundColor: "#333333D6",
+        justifyContent: 'center',
+        alignItems: 'center',
     },
-    darkContainer: {
-        flex: 1,
-        backgroundColor: "#333333", // Тёмный фон после 3 секунд
-        justifyContent: "center",
-        alignItems: "center",
+container_Main: {
+        width:336,
+         height:335,
+         backgroundColor:"#3B3B3BC7",
+         top:-10,
+    borderRadius:6,
+},
+text:{
+        left:30,
+         top:100,
+       color:'white',
+},
+    input:{
+
     },
-    text: {
-        fontSize: 24,
-        color: "#FFFFFF",
+    button:{
+        height:46,
+        borderRadius:6,
+        top:236,
+        left:85,
+        width:153,
+        backgroundColor:"#FDB623",
+    },
+    buttonText:{
+        fontSize:14,
+       left:18,
+        top:12.5,
     },
 });
 
 export default App;
-
