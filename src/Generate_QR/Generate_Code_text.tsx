@@ -6,18 +6,6 @@ function App() {
 
     return (
         <View style={styles.container}>
-
-            <View style={styles.container_Exit}>
-                <TouchableOpacity style={styles.button_1} onPress={() => Alert.alert('Let’s Start!', text)}>
-
-                </TouchableOpacity>
-            </View>
-<Text style={styles.text_text_2}>
-    Text
-</Text>
-
-
-
             <View style={styles.container_circle}>
                 <Text style={styles.circleText}></Text>
             </View>
@@ -136,19 +124,6 @@ const styles = StyleSheet.create({
         left:-130,
         fontSize: 15,
     },
-    container_Exit:{
-
-    },
-    image_1: {
-
-    },
-    button_1:{
-
-    },
-    text_text_2:
-        {
-
-        },
 });
 
 export default App;
