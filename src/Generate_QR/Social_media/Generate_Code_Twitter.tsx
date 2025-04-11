@@ -8,12 +8,12 @@ function App() {
         <View style={styles.container}>
 
 
-                <TouchableOpacity style={styles.button_2}>
-                    <Text style={styles.text_button}>{'<'}</Text>
-                </TouchableOpacity>
-<Text style={styles.text_text_2}>
-Phone
-</Text>
+            <TouchableOpacity style={styles.button_2}>
+                <Text style={styles.text_button}>{'<'}</Text>
+            </TouchableOpacity>
+            <Text style={styles.text_text_2}>
+                Twitter
+            </Text>
 
 
 
@@ -24,11 +24,11 @@ Phone
             <View style={styles.container_Main}>
                 <Text style={styles.text}></Text>
 
-                <Image source={require('./src/Img/8.png')} style={styles.image} />
-                <Text style={styles.text_text}>Phone Number</Text>
+                <Image source={require('./src/Img/5.png')} style={styles.image} />
+                <Text style={styles.text_text}>Username</Text>
                 <TextInput
                     style={styles.input_text}
-                    placeholder="+92xxxxxxxxxx"
+                    placeholder="Enter twitter username"
                     placeholderTextColor="#aaa"
                     value={text}
                     onChangeText={setText}
@@ -126,20 +126,20 @@ const styles = StyleSheet.create({
     },
     image:{
         top:20,
-        width:50,
-        height:50,
+        width:60,
+        height:49.33,
     },
     text_text:{
         color: 'white',
         top:45 ,
-        left:-95,
+        left:-108,
         fontSize: 15,
     },
     text_text_2:
         {
-          left:-110,
+            left:-108,
             top: -365,
-             color:'white',
+            color:'white',
             fontSize: 18,
         },
     text_button:{
@@ -149,12 +149,12 @@ const styles = StyleSheet.create({
         fontSize: 35,
     },
     button_2:{
-      left:-161,
+        left:-161,
         width:40,
-       height:40,
-       borderRadius: 6,
+        height:40,
+        borderRadius: 6,
         backgroundColor:'#333333',
-       top:-334,
+        top:-334,
     },
 });
 
