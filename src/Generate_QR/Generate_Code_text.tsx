@@ -6,6 +6,17 @@ function App() {
 
     return (
         <View style={styles.container}>
+
+
+            <TouchableOpacity style={styles.button_2}>
+                <Text style={styles.text_button}>{'<'}</Text>
+            </TouchableOpacity>
+            <Text style={styles.text_text_2}>
+                Text
+            </Text>
+
+
+
             <View style={styles.container_circle}>
                 <Text style={styles.circleText}></Text>
             </View>
@@ -123,6 +134,27 @@ const styles = StyleSheet.create({
         top:45 ,
         left:-130,
         fontSize: 15,
+    },
+    text_text_2:
+        {
+            left:-110,
+            top: -365,
+            color:'white',
+            fontSize: 18,
+        },
+    text_button:{
+        left:10,
+        top:-5,
+        color:'#FDB623',
+        fontSize: 35,
+    },
+    button_2:{
+        left:-161,
+        width:40,
+        height:40,
+        borderRadius: 6,
+        backgroundColor:'#333333',
+        top:-334,
     },
 });
 
