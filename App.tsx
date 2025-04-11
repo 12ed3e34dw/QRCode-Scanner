@@ -12,7 +12,7 @@ function App() {
                     <Text style={styles.text_button}>{'<'}</Text>
                 </TouchableOpacity>
 <Text style={styles.text_text_2}>
-    WhatsApp
+Phone
 </Text>
 
 
@@ -24,11 +24,11 @@ function App() {
             <View style={styles.container_Main}>
                 <Text style={styles.text}></Text>
 
-                <Image source={require('./src/Img/4.png')} style={styles.image} />
-                <Text style={styles.text_text}>WhatsApp Number</Text>
+                <Image source={require('./src/Img/8.png')} style={styles.image} />
+                <Text style={styles.text_text}>Phone Number</Text>
                 <TextInput
                     style={styles.input_text}
-                    placeholder="Enter number"
+                    placeholder="+92xxxxxxxxxx"
                     placeholderTextColor="#aaa"
                     value={text}
                     onChangeText={setText}
@@ -126,18 +126,18 @@ const styles = StyleSheet.create({
     },
     image:{
         top:20,
-        width:60,
-        height:60,
+        width:50,
+        height:50,
     },
     text_text:{
         color: 'white',
         top:45 ,
-        left:-78,
+        left:-95,
         fontSize: 15,
     },
     text_text_2:
         {
-          left:-98,
+          left:-110,
             top: -365,
              color:'white',
             fontSize: 18,
