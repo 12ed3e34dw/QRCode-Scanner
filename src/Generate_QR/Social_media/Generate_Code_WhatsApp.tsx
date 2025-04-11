@@ -8,12 +8,12 @@ function App() {
         <View style={styles.container}>
 
 
-                <TouchableOpacity style={styles.button_2}>
-                    <Text style={styles.text_button}>{'<'}</Text>
-                </TouchableOpacity>
-<Text style={styles.text_text_2}>
-    WhatsApp
-</Text>
+            <TouchableOpacity style={styles.button_2}>
+                <Text style={styles.text_button}>{'<'}</Text>
+            </TouchableOpacity>
+            <Text style={styles.text_text_2}>
+                WhatsApp
+            </Text>
 
 
 
@@ -137,9 +137,9 @@ const styles = StyleSheet.create({
     },
     text_text_2:
         {
-          left:-98,
+            left:-98,
             top: -365,
-             color:'white',
+            color:'white',
             fontSize: 18,
         },
     text_button:{
@@ -149,12 +149,12 @@ const styles = StyleSheet.create({
         fontSize: 35,
     },
     button_2:{
-      left:-161,
+        left:-161,
         width:40,
-       height:40,
-       borderRadius: 6,
+        height:40,
+        borderRadius: 6,
         backgroundColor:'#333333',
-       top:-334,
+        top:-334,
     },
 });
 
